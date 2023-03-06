@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    
+    <!-- Meu CSS -->
+    <style>
+        body {background-color: #aed7ed;
+            color: white;
+            font: normal 20pt Arial;
+        }
+
+        h1 {color: yellow;}
+        p {color: greenyellow;}
+    </style>
+</head>
+
+
+<body>
+    <h1>Olá, mundo!!!</h1>
+    <p>Já me livrei...</p>
+
+<!-- Códigos JavaScript -->
+    <script>
+        var n1 = Number(window.prompt("Digite um número: ")) // Converter de String para Número
+        var n2 = Number(window.prompt("Digite outro número: ")) // Converter de String para Número
+        // Number.parseInt() para Inteiros ou Number.parseFloat() para Decimais
+        // Number() para Inteiros e/ou Decimais
+        var s = n1 + n2
+        window.alert("A soma entre n1=" + n1 + " e n2=" + n2 + " é igual a " + s)  // Concatenação
+        window.alert(`A soma entre n1=${n1} e n2=${n2} é igual a ${s}`)  // Template String
+
+        // Todo valor atribuído a umavariável através do prompt é considerado uma String
+        // e portanto, precisará ser transformado em um Number;
+        // (number + number) para adição
+        // (string + string) para concatenação
+    </script>
+</body>
+
+</html>

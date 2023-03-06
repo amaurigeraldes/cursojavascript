@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+
+
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+    <section>
+        <div>
+            <!-- Criando a Caixa de Entrada do Número -->
+            <p>Número: <input type="number" name="num" id="txtn">
+                <!-- Criando o Botão e chamando a Função tabuada -->
+                <input type="button" value="Gerar Tabuada" onclick="tabuada()">
+            </p>
+        </div>
+
+        <div>
+            <!-- Criando a Lista com 10 Elementos -->
+            <select name="Tabuada" id="seltab" size="10">
+                <!-- Mostra o texto dentro da Caixa da Lista -->
+                <option>"Digite um número acima"</option>
+            </select>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVídeo</p>
+    </footer>
+
+    <!-- JavaScript Externo -->
+    <script src="script.js"></script>
+</body>
+
+</html>

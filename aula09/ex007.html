@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+
+    <!-- Meu CSS -->
+    <style>
+        body {
+            background-color: cornsilk;
+            color: green;
+            font: normal 18pt Arial;
+        }
+
+        h1 {
+            color: "";
+        }
+
+        p {
+            color: "";
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="mens1">Clique em mim</div>
+    <div name="mens2">Clique aqui</div>
+    <div class="mens3">Clique agora</div>
+    <div id="mens4">Clique logo</div>
+    <div class="mens5">Clique agora mesmo</div>
+
+    <hr>
+
+    <!-- Códigos JavaScript -->
+    <script>
+        // 1 - SELECIONANDO OBJETOS: POR MARCA
+        document.write("<strong>1 - SELECIONANDO OBJETOS: por MARCA</strong>", "<br>")
+        document.write("<strong>getElementsByTagName()</strong>", "<br>")
+        document.write("<strong>Exemplos:</strong>", "<br>")
+        // Exemplos:
+        window.document.write(window.document.charset, "<br>")
+        window.document.write(window.navigator.appName, "<br>")
+        window.document.write(window.document.URL, "<br>")
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        corpo.style.background = "lightblue"
+        p1.style.color = "blue"
+        window.document.write("Está escrito assim: " + p1.innerText, "<br>")
+        document.write(p1.innerText, "<br>")
+        document.write(p1.innerHTML, "<br>")
+        // window.alert(p1.innerText) // Mostra somente o Texto
+        // window.alert(p1.innerHTML) // Mostra somente o Texto e as Tags
+        document.write("<hr>")
+
+        // 2 - SELECIONANDO OBJETOS: POR ID
+        document.write("<strong>2 - SELECIONANDO OBJETOS: por ID</strong>", "<br>")
+        document.write("<strong>getElementById()</strong>", "<br>")
+        document.write("<strong>Exemplos:</strong>", "<br>")
+        // Exemplos:
+        var altera_id_div = window.document.getElementById('mens1')
+        altera_id_div.style.background = 'yellow'
+        // Alterar o conteúdo da Div
+        altera_id_div.innerText = "Estou aguardando..."
+        // Ou:
+        window.document.getElementById('mens1').innerText = "Olá!!!"
+        document.write("<hr>")
+
+        // 3 - SELECIONANDO OBJETOS: POR NOME
+        document.write("<strong>3 - SELECIONANDO OBJETOS: por NOME</strong>", "<br>")
+        document.write("<strong>getElementsByName()</strong>", "<br>")
+        document.write("<strong>Exemplos:</strong>", "<br>")
+        // Exemplos:
+        var altera_name_div = window.document.getElementsByName('mens2')[0]
+        altera_name_div.style.background = 'white'
+        // Alterar o conteúdo da Div
+        altera_name_div.innerText = "Estou esperando..."
+        // Ou:
+        window.document.getElementsByName('mens2')[0].innerText = "Hello!!!"
+        document.write("<hr>")
+
+        // 4 - SELECIONANDO OBJETOS: POR CLASSE
+        document.write("<strong>4 - SELECIONANDO OBJETOS: por CLASSE</strong>", "<br>")
+        document.write("<strong>getElementsByClassName()</strong>", "<br>")
+        document.write("<strong>Exemplos:</strong>", "<br>")
+        // Exemplos:
+        var altera_class_div = window.document.getElementsByClassName('mens3')[0]
+        altera_class_div.style.background = 'yellowgreen'
+        // Alterar o conteúdo da Div
+        altera_class_div.innerText = "Ainda estou esperando..."
+        // Ou:
+        window.document.getElementsByClassName('mens3')[0].innerText = "Hey!!!"
+        document.write("<hr>")
+
+        // 5 - SELECIONANDO OBJETOS: POR SELETOR
+        document.write("<strong>5 - SELECIONANDO OBJETOS: por SELETOR</strong>", "<br>")
+        document.write("<strong>querySelector() -> retorna o primeiro elemento</strong>", "<br>")
+        document.write("<strong>querySelectorAll() -> retorna uma lista de elementos</strong>", "<br>")
+        document.write("<strong>Exemplos:</strong>", "<br>")
+        // Exemplos:
+        // Para alterar através do Id utilizar: #
+        var altera_id_div = window.document.querySelector('div#mens4')
+        altera_id_div.style.background = 'lightgreen'
+        // Alterar o conteúdo da Div pelo Id:
+        altera_id_div.innerText = "Ainda estou esperando..."
+
+        // Para alterar através da Class utilizar: .
+        var altera_class_div = window.document.querySelector('div.mens5')
+        altera_class_div.style.background = 'lightyellow'
+        // Alterar o conteúdo da Div pela Classe:
+        altera_class_div.innerText = "Ainda estou esperando... vai demorar?"
+
+        document.write("<hr>")
+
+
+    </script>
+</body>
+
+</html>

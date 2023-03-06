@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+
+    <!-- Meu CSS -->
+    <style>
+        body {
+            background-color: #aed7ed;
+            color: green;
+            font: normal 20pt Arial;
+        }
+
+        h1 {
+            color: yellow;
+        }
+
+        p {
+            color: greenyellow;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- Códigos JavaScript -->
+    <script>
+        // Operadores de Atribuição:
+        var x = 5
+        document.write(`O valor de ${x} + 2 é igual a ${x + 2}.`, "<br>")
+        document.write(`O valor de ${x} - 2 é igual a ${x - 2}.`, "<br>")
+        document.write(`O valor de ${x} * 2 é igual a ${x * 2}.`, "<br>")
+        document.write(`O valor de ${x} / 2 é igual a ${x / 2}.`, "<br>")
+        document.write(`O valor de ${x} % 2 é igual a ${x % 2}.`, "<br>")
+        document.write(`O valor de ${x} ** 2 é igual a ${x ** 2}.`, "<br>")
+        document.write(" ", "<br>")
+
+
+        // Operadores de Auto-atribuição:
+        var a = 5 + 3
+        var b = a % 5
+        var c = 5 * b ** 2
+        var d = 10 - a / 2
+        var e = 6 * 2 / d
+        var f = b % e + 4 / e
+        document.write(`O valor de a = 5 + 3 é igual a ${a}.`, "<br>")
+        document.write(`O valor de b = a % 5 é igual a ${b}.`, "<br>")
+        document.write(`O valor de c = 5 * b ** 2 é igual a ${c}.`, "<br>")
+        document.write(`O valor de d = 10 - a / 2 é igual a ${d}.`, "<br>")
+        document.write(`O valor de e = 6 * 2 / d é igual a ${e}.`, "<br>")
+        document.write(`O valor de f = b % e + 4 / e é igual a ${f}.`, "<br>")
+
+
+        // Operadores de Incremento e Decremento
+        var x = 5
+        
+        // Incremento
+        x = x + 1
+        x += 1 // Forma Simplificada
+        x++ // Forma ainda mais Simplificada (Pós-Incremento)
+        ++x // Forma ainda mais Simplificada (Pré-Incremento)
+
+        // Decremento
+        x = x - 1
+        x -= 1 // Forma Simplificada
+        x-- // Forma ainda mais Simplificada (Pós-Decremento)
+        --x // Forma ainda mais Simplificada (Pré-Decremento)
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+
+    <!-- Meu CSS -->
+    <style>
+        body {
+            background-color: #aed7ed;
+            color: green;
+            font: normal 12pt Arial;
+        }
+
+        h1 {
+            color: yellow;
+        }
+
+        p {
+            color: greenyellow;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- Códigos JavaScript -->
+    <script>
+        // 1) OPERADORES RELACIONAIS 
+        document.write("1) OPERADORES RELACIONAIS", "<br>")
+        document.write(`O valor de 5 > 2 é ${5 > 2}.`, "<br>")
+        document.write(`O valor de 7 < 4 é ${7 < 4}.`, "<br>")
+        document.write(`O valor de 8 >= 8 é ${8 >= 8}.`, "<br>")
+        document.write(`O valor de 9 <= 7 é ${9 <= 7}.`, "<br>")
+        document.write(`O valor de 5 == 5 é ${5 == 5}.`, "<br>")
+        document.write(`O valor de 4 != 4 é ${4 != 4}.`, "<br>")
+        document.write(" ", "<br>")
+
+        // OPERADORES IDENTIDADE
+        document.write("Operadores Identidade", "<br>")
+        var x = 5
+        var y = '5'
+
+        document.write("O valor de x = 5 é do Tipo: " + typeof x, "<br>")
+        document.write("O valor de y = '5' é do Tipo: " + typeof y, "<br>")
+        document.write(`O valor de x == y é ${x == 5}.`, "<br>")
+        document.write(`O valor de x == y é ${x == y}.`, "<br>")
+        document.write(`O valor de x === y é ${x === y}.`, "<br>")
+        document.write(`O valor de x === y é ${x === 5}.`, "<br>")
+        document.write(`O valor de x != y é ${x != y}.`, "<br>")
+        document.write(`O valor de x !== y é ${x !== y}.`, "<br>") // Desigual Restrito
+        document.write(" ", "<br>")
+
+        // 2) OPERADORES LÓGICOS
+        document.write("2) OPERADORES LÓGICOS:", "<br>")
+
+        document.write("I - OPERADOR DE NEGAÇÃO: !", "<br>")
+        document.write(`O valor !true é ${!true}.`, "<br>")
+        document.write(`O valor !false é ${!false}.`, "<br>")
+        document.write(" ", "<br>")
+
+        document.write("II - OPERADOR DE CONJUNÇÃO: &&", "<br>")
+        document.write(`O valor de true && true é ${true && true}.`, "<br>")
+        document.write(`O valor de true && false é ${true && false}.`, "<br>")
+        document.write(`O valor de false && true é ${false && true}.`, "<br>")
+        document.write(`O valor de false && false é ${false && false}.`, "<br>")
+        document.write(" ", "<br>")
+
+        document.write("III - OPERADOR DE DISJUNÇÃO: ||", "<br>")
+        document.write(`O valor de true && true é ${true || true}.`, "<br>")
+        document.write(`O valor de true && false é ${true || false}.`, "<br>")
+        document.write(`O valor de false && true é ${false || true}.`, "<br>")
+        document.write(`O valor de false && false é ${false || false}.`, "<br>")
+        document.write(" ", "<br>")
+
+        document.write("ORDEM DE PRECEDÊNCIA:", "<br>")
+        document.write("1º) Operadores Aritméticos;", "<br>")
+        document.write("2º) Operadores Relacionais;", "<br>")
+        document.write("3º) Operadores Lógicos;", "<br>")
+        document.write(" ", "<br>")
+
+        document.write("Ordem de Precedência dos Operadores Lógicos:", "<br>")
+        document.write("# 1º) Operador de Negação: !(não);", "<br>")
+        document.write("# 2º) Operador de Conjunção: &&(e);", "<br>")
+        document.write("# 3º) Operador de Disjunção: ||(ou);", "<br>")
+        document.write(" ", "<br>")
+
+        var a = 5
+        var b = 8
+        document.write(`O valor de a = ${a}.`, "<br>")
+        document.write(`O valor de b = ${b}.`, "<br>")
+        document.write(" ", "<br>")
+
+        document.write("Exemplo 01:", "<br>")
+        document.write(`O valor de a > b && b % 2 == 0 é ${a > b && b % 2 == 0}.`, "<br>")
+        document.write(" ", "<br>")
+
+        document.write("Exemplo 02:", "<br>")
+        document.write(`O valor de a <= b || b / 2 == 2 é ${a <= b || b / 2 == 2}.`, "<br>")
+        document.write(" ", "<br>")
+
+        var idade = 15
+        var estado = "SP"
+        var salario = 1600
+        var sexo = "F"
+
+        document.write(`O valor de idade = ${idade}.`, "<br>")
+        document.write(`O valor de estado = ${estado}.`, "<br>")
+        document.write(`O valor de salário = ${salario}.`, "<br>")
+        document.write(`O valor de sexo = ${sexo}.`, "<br>")
+        document.write(" ", "<br>")
+
+        document.write("Exemplo 03:", "<br>")
+        document.write(`O valor da idade >= 15 && idade <= 17 é ${idade >= 15 && idade <= 17}.`, "<br>")
+        document.write(" ", "<br>")
+
+        document.write("Exemplo 04:", "<br>")
+        document.write(`O valor do estado == "RJ" || estado == "SP" é ${estado == "RJ" || estado == "SP"}.`, "<br>")
+        document.write(" ", "<br>")
+
+        document.write("Exemplo 05:", "<br>")
+        document.write(`O valor do salário > 1500 && sexo != "M" é ${salario > 1500 && sexo != "M"}.`, "<br>")
+        document.write(" ", "<br>")
+
+        // 3) OPERADOR TERNÁRIO (Junta 3 Operandos)
+        // TESTE ? TRUE : FALSE
+        document.write("3) OPERADOR TERNÁRIO:", "<br>")
+        document.write("Exemplo 01:", "<br>")
+        var media = 5.5
+        media += 2
+        document.write(`A média do aluno é igual a ${media} e portanto, como a media >=7 ? "Aprovado!!!" : "Reprovado" o aluno foi ${media >=7 ? "Aprovado!!!" : "Reprovado"}.`, "<br>")
+        document.write(" ", "<br>")
+
+        document.write("Exemplo 02:", "<br>")
+        var x = 8
+        var resultado = x % 2 == 0 ? 5 : 9
+        document.write("O valor de x é igual a " + x + ".", "<br>")
+        document.write(`O resultado de x % 2 == 0 ? 5 : 9 é igual a ${resultado}.`, "<br>")
+        document.write(" ", "<br>")
+
+    </script>
+</body>
+
+</html>

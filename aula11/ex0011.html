@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+
+<style>
+body { background-color: skyblue;}
+h1 {color: green;}
+h2 {color:blue;}
+input {background-color: yellow;}
+p {color: green;}
+p1 {color: yellow;}
+p2 {color: red;}
+
+</style>
+
+
+</head>
+
+<body>
+    <h1><strong> Desafio das Nacionalidades </strong></h1>
+
+    <h2>Em qual país você nasceu? :</h2> <input type="text" name="" id="txtpais">
+    <input type="button" value="Verificar" onclick="nacionalidade()">
+    <div id='res'>
+
+    </div>
+
+    <script>
+        function nacionalidade() {
+            var p = document.getElementById('txtpais')
+            var pais = String(p.value)
+
+            res.innerHTML = `<p>Seu país é <strong>${pais}.</strong></p>`
+            
+            if (pais == 'Brasil') {
+                res.innerHTML += '<p1>Você é <strong>Brasileiro!</strong></p1>'
+            } else {
+                res.innerHTML += '<p2>Você é <strong>Estrangeiro!</strong></p2>'
+            }
+        }
+    </script>
+</body>
+
+</html>
